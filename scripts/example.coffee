@@ -9,7 +9,14 @@
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = (robot) ->
+  robot.hear /PING$/i, (msg) ->
+    msg.send "PONG"
 
+  robot.hear /海風に揺れる一輪の花！/i, (msg) ->
+    msg.send "キュアマリン！"
+
+  robot.hear /ピンクのハートは愛ある印！/i, (msg) ->
+    msg.send "もぎたてフレッシュ、キュアピーチ！"
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
