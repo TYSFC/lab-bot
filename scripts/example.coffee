@@ -19,7 +19,7 @@ module.exports = (robot) ->
     msg.send "もぎたてフレッシュ、キュアピーチ！"
 
   robot.hear /爪弾くは魂の調べ！/i, (msg) ->
-    msg.hear "キュアビート！"
+    msg.send "キュアビート！"
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
